@@ -3,7 +3,7 @@ Siddharth's first and experimental Python Package
 
 
 ```
-C:\Users\siddpc\OneDrive\Desktop>pip install -i https://test.pypi.org/simple/ SiddP6
+C:\Users\siddpc\OneDrive\Desktop>pip install siddp6
 
 ```
 
@@ -23,4 +23,4 @@ Bye Siddharth
 >>> ^Z
 ```
 
-![image](https://user-images.githubusercontent.com/91800813/202278949-e53aa26b-5442-4d64-92e3-8a44f1875dee.png)
+![image](https://user-images.githubusercontent.com/91800813/202282981-5a78dbd8-59e9-4636-bbc4-ab787455b066.png)
