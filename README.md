@@ -1,5 +1,5 @@
 # Sidd-Package
-Resume in the form of Python Package 
+Siddharth's first and experimental Python Package 
 
 
 ```
