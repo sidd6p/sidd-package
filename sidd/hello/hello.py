@@ -1,2 +1,2 @@
-def hello_sidd():
+def hello():
     print("Hello")

@@ -1,2 +1,2 @@
-def bye_sidd():
+def bye():
     print("Bye")

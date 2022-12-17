@@ -1,5 +1,6 @@
 import sidd
 
-sidd.hello()
-sidd.who()
-sidd.bye()
+# sidd.hello()
+# sidd.who()
+# sidd.bye()
+# sidd.education()

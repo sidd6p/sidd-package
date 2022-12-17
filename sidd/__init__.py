@@ -1,3 +1,5 @@
-from bye import *
-from hello import *
+from .hello import *
+from .bye import *
+from .education import *
 from .sidd import *
+
