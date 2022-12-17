@@ -1,26 +1,65 @@
 # Sidd-Package
-Siddharth's first and experimental Python Package 
+Siddhartha's resume in the form of python-package 
+
+## Directory stracture
+
+    │   .gitignore
+    │   LICENSE
+    │   README.md
+    │   setup.py
+    │
+    └───sidd
+        │   sidd.py
+        │   __init__.py
+        │
+        ├───bye
+        │       bye.py
+        │       __init__.py
+        │
+        ├───contact
+        │       contact.py
+        │       __init__.py
+        │
+        ├───education
+        │       education.py
+        │       __init__.py
+        │
+        ├───experience
+        │       experience.py
+        │       __init__.py
+        │
+        ├───hello
+        │       hello.py
+        │       __init__.py
+        │
+        └───project
+                project.py
+                __init__.py
 
 
+## Run Locally
+
+
+Install package
+```py
+  pip install siddp6
 ```
-C:\Users\siddpc\OneDrive\Desktop>pip install siddp6
 
+Import package
+```py
+  import sidd
 ```
 
-```
-C:\Users\siddpc\OneDrive\Desktop>python
-
-Python 3.10.1 (tags/v3.10.1:2cd268a, Dec  6 2021, 19:10:37) [MSC v.1929 64 bit (AMD64)] on win32
-Type "help", "copyright", "credits" or "license" for more information.
-
->>> import sidd
->>> sidd.who()
-I am Siddhatha
->>> sidd.hello()
-Hello Siddharth
->>> sidd.bye()
-Bye Siddharth
->>> ^Z
+Print all attributes and methods (functions , modules, strings, lists, dictionaries etc.)
+```py
+  print(dir(sidd))
 ```
 
-![image](https://user-images.githubusercontent.com/91800813/202282981-5a78dbd8-59e9-4636-bbc4-ab787455b066.png)
+## Output
+
+<img width="959" alt="image" src="https://user-images.githubusercontent.com/91800813/208263532-9fd01cc9-530b-4758-b5e5-ac364ecc3722.png">
+
+
+## Tech & Tool
+
+__Language__: [Python](https://www.python.org/)
