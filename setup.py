@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="SiddP6",                     # This is the name of the package
-    version="0.0.8",                        # The initial release version
+    version="1.0.0",                        # The initial release version
     author="Siddhartha Purwar",                     # Full name of the author
     description="Siddharth's first and experimental Python Package",
     long_description=long_description,      # Long description read from the the readme file
