@@ -1,13 +1,13 @@
-# # src/main.py
-# import os
-# import streamlit.web.cli as stcli
-# import sys
+# src/main.py
+import os
+import streamlit.web.cli as stcli
+import sys
 
-# def run():
-#     app_path = os.path.join(os.path.dirname(__file__), 'Home.py')
-#     sys.argv = ["streamlit", "run", app_path]
-#     stcli.main()
+def run():
+    app_path = os.path.join(os.path.dirname(__file__), 'Home.py')
+    sys.argv = ["streamlit", "run", app_path]
+    stcli.main()
 
 
-# if __name__ == "__main__":
-#     run()
+if __name__ == "__main__":
+    run()
