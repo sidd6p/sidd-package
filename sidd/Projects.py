@@ -1,9 +1,6 @@
 import streamlit as st
 import json
 
-# Page configuration
-st.set_page_config(page_title="Projects", page_icon="🚀")
-
 # Project data in JSON format
 projects_json = """[
     {
