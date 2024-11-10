@@ -4,9 +4,9 @@ import setuptools
 with open("README.md", "r") as fh:
     long_description = fh.read()
 
-# Read the requirements from the requirements.txt file
-with open('requirements.txt', 'r') as f:
-    install_requires = f.read().splitlines()
+# # Read the requirements from the requirements.txt file
+# with open('requirements.txt', 'r') as f:
+#     install_requires = f.read().splitlines()
 
 # Setup function for the package
 setuptools.setup(
@@ -25,5 +25,5 @@ setuptools.setup(
     python_requires='>=3.6',                # Minimum version requirement of the package
     py_modules=["sidd"],             # Name of the python package
     package_dir={'': '.'},     # Directory of the source code of the package
-    install_requires=install_requires                     # Install other dependencies from requirements.txt
+    install_requires=['streamlit==1.40.0']                     # Install other dependencies from requirements.txt
 )

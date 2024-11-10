@@ -4,9 +4,9 @@ import streamlit as st
 
 st.write("Hello I am Siddhartha Purwar")
 
-projects_page = st.Page("./pages/Projects.py", title="Projects")
-link_page = st.Page("./pages/Links.py", title="Links")
-experience_page = st.Page("./pages/Experiences.py", title="Experiences")
+projects_page = st.Page("./Projects.py", title="Projects")
+link_page = st.Page("./Links.py", title="Links")
+experience_page = st.Page("./Experiences.py", title="Experiences")
 
 
 pg = st.navigation([projects_page, link_page, experience_page])
