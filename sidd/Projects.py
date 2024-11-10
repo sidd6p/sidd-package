@@ -23,7 +23,7 @@ def display_project_details(project_data):
 
 
 # Hardcoded JSON file path
-json_file_path = "./src/projects.json"
+json_file_path = "projects.json"
 
 # Load JSON data
 try:
