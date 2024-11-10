@@ -5,27 +5,27 @@
         "concepts": "RESTful API, Authentication, Email Functionality, Deployment",
         "code_link": "https://github.com/sidd6p/Store-API",
         "features": {
-            "User": {
-                "Allows users to register by providing necessary details.": true,
-                "Enables users to log in using their email and password.": true,
-                "Allows users to securely log out of their accounts.": true
-            },
-            "Store": {
-                "Enables the creation of a new store to list items and tags.": true,
-                "Allows the deletion of a store along with its listed items and tags.": true
-            },
-            "Item": {
-                "Allows the creation of a new item for a specific store.": true,
-                "Enables the modification of item information such as name, description, etc.": true,
-                "Allows the removal of an item along with its associated tag from the store.": true
-            },
-            "Tag": {
-                "Enables the creation of a new tag to group items together.": true,
-                "Allows the deletion of a tag from the system.": true
-            },
-            "Link": {
-                "Enables the removal of a tag association from a specific item": true
-            }
+            "User": [
+                "Allows users to register by providing necessary details.",
+                "Enables users to log in using their email and password.",
+                "Allows users to securely log out of their accounts."
+            ],
+            "Store": [
+                "Enables the creation of a new store to list items and tags.",
+                "Allows the deletion of a store along with its listed items and tags."
+            ],
+            "Item": [
+                "Allows the creation of a new item for a specific store.",
+                "Enables the modification of item information such as name, description, etc.",
+                "Allows the removal of an item along with its associated tag from the store."
+            ],
+            "Tag": [
+                "Enables the creation of a new tag to group items together.",
+                "Allows the deletion of a tag from the system."
+            ],
+            "Link": [
+                "Enables the removal of a tag association from a specific item"
+            ]
         }
     },
     {
@@ -35,32 +35,27 @@
         "kaggle_link": "https://www.kaggle.com/code/siddp6/deep-learning-utility",
         "code_link": "https://www.kaggle.com/code/siddp6/deep-learning-utility",
         "features": {
-            "run_epoch": {
-                "Runs a single training or validation epoch": true,
-                "Manages model mode (train or eval)": true,
-                "Computes losses and updates weights during training.": true,
-                "Returns the average loss for the epoch.": true
-            },
-            "test_run": {
-                "Evaluates a trained model on an evaluation dataset.": true,
-                "Computes losses and tracks correct predictions per class.": true,
-                "Returns evaluation results": {
-                    "average loss": true,
-                    "true labels": true,
-                    "class-wise correct counts": true,
-                    "total counts": true
-                }
-            },
-            "train": {
-                "Trains a neural network model for specified epochs.": true,
-                "Iterates through epochs, trains on training data, and calculates training losses.": true,
-                "Computes validation losses if provided.": true,
-                "Returns lists of training and validation losses.": true
-            },
-            "plot_loss": {
-                "Generates a plot showing training": true,
-                "Generates a plot showing validation losses": true
-            }
+            "run_epoch": [
+                "Runs a single training or validation epoch",
+                "Manages model mode (train or eval)",
+                "Computes losses and updates weights during training.",
+                "Returns the average loss for the epoch."
+            ],
+            "test_run": [
+                "Evaluates a trained model on an evaluation dataset.",
+                "Computes losses and tracks correct predictions per class.",
+                "Returns evaluation results including average loss, true labels, class-wise correct counts, and total counts."
+            ],
+            "train": [
+                "Trains a neural network model for specified epochs.",
+                "Iterates through epochs, trains on training data, and calculates training losses.",
+                "Computes validation losses if provided.",
+                "Returns lists of training and validation losses."
+            ],
+            "plot_loss": [
+                "Generates a plot showing training losses.",
+                "Generates a plot showing validation losses."
+            ]
         }
     },
     {
@@ -69,12 +64,12 @@
         "code_link": "https://www.kaggle.com/code/siddp6/shell-ai-waste-to-energy/notebook",
         "concepts": "Biomass Harvest Forecasting, Optimal Path Selection, ARIMA Modeling, Algorithm Design",
         "features": {
-            "Participant": {
-                "Ranking": 19,
-                "Challenge": "Forecasting biomass harvest and optimizing routes",
-                "Techniques": "ARIMA model, Algorithm design",
-                "Duration": "Over 35 days, 50+ iterations"
-            }
+            "Participant": [
+                "Ranking: 19",
+                "Challenge: Forecasting biomass harvest and optimizing routes",
+                "Techniques: ARIMA model, Algorithm design",
+                "Duration: Over 35 days, 50+ iterations"
+            ]
         }
     },
     {
@@ -83,14 +78,14 @@
         "concepts": "Semantic Object Segregation, Real-time Video and Audio Analysis, Sentiment Analysis, Machine Learning",
         "code_link": "https://github.com/sidd6p/Audio-Video-Analysis-Tool",
         "features": {
-            "Video Analysis": {
-                "Utilized the FER library for facial expression recognition": true,
-                "Implemented a CNN-based PyTorch model": true
-            },
-            "Audio Analysis": {
-                "Employed Flair, a Bi-LSTM model": true,
-                "Used text2emotion for audio sentiment analysis": true
-            }
+            "Video Analysis": [
+                "Utilized the FER library for facial expression recognition",
+                "Implemented a CNN-based PyTorch model"
+            ],
+            "Audio Analysis": [
+                "Employed Flair, a Bi-LSTM model",
+                "Used text2emotion for audio sentiment analysis"
+            ]
         }
     },
     {
@@ -99,18 +94,16 @@
         "technology_used": "Python (Programming Language), Deep Learning, AWS SageMaker, PyTorch",
         "concepts": "Image Classification, Neural Network, Hyperparameters Tuning",
         "features": {
-            "Command Line Utility": {
-                "Options": {
-                    "Path to the directory containing the training data.": true,
-                    "NN architecture to be used for image classification.": true,
-                    "Learning rate for the neural network training.": true,
-                    "Number of hidden units in the neural network.": true,
-                    "Number of training epochs for the neural network.": true,
-                    "Flag to enable or disable GPU usage for training.": true,
-                    "Path to the directory for saving training checkpoints.": true
-                }
-            },
-            "Jupyter Notebook": true
+            "Command Line Utility": [
+                "Path to the directory containing the training data.",
+                "NN architecture to be used for image classification.",
+                "Learning rate for the neural network training.",
+                "Number of hidden units in the neural network.",
+                "Number of training epochs for the neural network.",
+                "Flag to enable or disable GPU usage for training.",
+                "Path to the directory for saving training checkpoints."
+            ],
+            "Jupyter Notebook": []
         }
     }
 ]

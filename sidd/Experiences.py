@@ -2,8 +2,7 @@ import streamlit as st
 import json
 import requests
 
-
-# Function to fetch JSON data from a URL
+# Function to fetch JSON data from a URL (or local file for testing)
 def fetch_json_from_url(url):
     try:
         response = requests.get(url)
@@ -12,42 +11,42 @@ def fetch_json_from_url(url):
         else:
             return None
     except requests.exceptions.RequestException as e:
+        st.error(f"An error occurred while fetching the experience data: {e}")
         return None
-
 
 # Function to display experience details creatively
 def display_experience_details(experience_data):
-    st.markdown(f"# 🚀 **{experience_data['project_name']}**")
-    st.markdown(f"__💻 Technology Used:__ {experience_data['technology_used']}")
-    st.markdown(f"__💡 Concepts:__ {experience_data['concepts']}")
-    st.markdown(f"### 🌐 [Code Link]({experience_data['code_link']})")
-
-    st.markdown("#### Features:")
-    for feature_category, features in experience_data["features"].items():
-        st.markdown(f"**{feature_category}:**")
-        if isinstance(features, dict):
-            for feature, available in features.items():
-                if available:
-                    st.markdown(f" - {feature}")
-        elif isinstance(features, bool):
-            st.markdown(f" - {feature_category}")
-
+    # Displaying company name and title with emoji
+    st.markdown(f"## 🏢 **{experience_data['Company']}** - {experience_data['Title']}")
+    
+    # Displaying key details
+    st.markdown(f"**Skills Used:** 🔧 {experience_data['Skills']}")
+    st.markdown(f"**Job Type:** 💼 {experience_data['Type']}")
+    st.markdown(f"**Duration:** 📅 {experience_data['start_date']} to {experience_data['end_date']}")
+    
+    st.markdown("### 📄 **Job Description:**")
+    # Displaying the description creatively with bullet points
+    for item in experience_data['description']:
+        st.markdown(f"➡️ {item}")
+    
+    # Adding a horizontal line to separate different experiences
+    st.markdown("---")
 
 # Load JSON data from URL
 try:
-    url = "https://raw.githubusercontent.com/sidd6p/sidd-package/refs/heads/main/src/experiences.json"
+    url = "https://raw.githubusercontent.com/sidd6p/sidd-package/main/src/experiences.json"
     experiences_data = fetch_json_from_url(url)
 
     if experiences_data:  # Check if the data was successfully fetched
-        # Get experience names for the dropdown options
-        experience_names = [experience["project_name"] for experience in experiences_data]
+        # Get job titles for the dropdown options
+        experience_titles = [experience["Title"] for experience in experiences_data]
 
-        # Dropdown to select an experience
-        selected_experience = st.selectbox("Select an Experience", experience_names)
+        # Dropdown to select a job title
+        selected_experience = st.selectbox("Select an Experience 🧐", experience_titles)
 
         # Find the selected experience and display its details
         for experience in experiences_data:
-            if experience["project_name"] == selected_experience:
+            if experience["Title"] == selected_experience:
                 display_experience_details(experience)
                 break
 
