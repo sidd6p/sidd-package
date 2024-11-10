@@ -1,6 +1,5 @@
 import streamlit as st
 import json
-import os
 
 # st.set_page_config(page_title="Projects", page_icon="🚀")
 
@@ -24,7 +23,7 @@ def display_project_details(project_data):
 
 
 # Hardcoded JSON file path
-json_file_path = os.path.abspath("src/projects.json")
+json_file_path = "./src/projects.json"
 
 # Load JSON data
 try:
