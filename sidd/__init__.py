@@ -1,8 +1,8 @@
-from .hello import *
-from .bye import *
-from .education import *
-from .project import *
-from .experience import *
-from .contact import *
+import os
+import streamlit.web.cli as stcli
+import sys
 
-from .sidd import *
+def run():
+    app_path = os.path.join(os.path.dirname(__file__), 'Home.py')
+    sys.argv = ["streamlit", "run", app_path]
+    stcli.main()
