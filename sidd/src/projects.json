@@ -4,12 +4,6 @@
         "technology_used": "Python, Flask, VS Code, RestAPI, Insomnia, Swagger",
         "concepts": "RESTful API, Authentication, Email Functionality, Deployment",
         "code_link": "https://github.com/sidd6p/Store-API",
-        "description": [
-            "Developed a RESTful API for store management using Flask framework.",
-            "Utilized libraries such as smorest and JWT for authentication.",
-            "Implemented email functionality using Mailgun API.",
-            "Used Render for deployment."
-        ],
         "features": {
             "User": {
                 "Allows users to register by providing necessary details.": true,
@@ -39,11 +33,6 @@
         "technology_used": "Python, Kaggle",
         "concepts": "Neural Network Training, Model Evaluation, Loss Computation, Data Visualization",
         "kaggle_link": "https://www.kaggle.com/code/siddp6/deep-learning-utility",
-        "description": [
-            "Developed a Python utility file containing functions to streamline training and evaluating neural network models." ,
-            "The utility includes functions such as run_epoch for single training or validation epochs, test_run for model evaluation, and train for training neural network models over specified epochs.",
-            "It also features plot_loss function to generate training and validation loss plots, aiding efficient model evaluation and visualization."
-        ],
         "code_link": "https://www.kaggle.com/code/siddp6/deep-learning-utility",
         "features": {
             "run_epoch": {
@@ -55,10 +44,10 @@
             "test_run": {
                 "Evaluates a trained model on an evaluation dataset.": true,
                 "Computes losses and tracks correct predictions per class.": true,
-                "Returns evaluation results":{
-                    "average loss": true, 
-                    "true labels": true, 
-                    "class-wise correct counts": true, 
+                "Returns evaluation results": {
+                    "average loss": true,
+                    "true labels": true,
+                    "class-wise correct counts": true,
                     "total counts": true
                 }
             },
@@ -79,13 +68,6 @@
         "technology_used": "Python, ARIMA, Algorithms, Kaggle",
         "code_link": "https://www.kaggle.com/code/siddp6/shell-ai-waste-to-energy/notebook",
         "concepts": "Biomass Harvest Forecasting, Optimal Path Selection, ARIMA Modeling, Algorithm Design",
-        "description": [
-            "Participated in the Shell.ai Hackathon 2023, General Edition, achieving a remarkable ranking of 19 out of 1600+ participants.",
-            "Engaged in solving a unique challenge centered around forecasting biomass harvest and optimizing routes from harvesting sites to depots and refineries, contributing to the promotion of biomass fuel and the reduction of carbon footprint.",
-            "Employed an ARIMA model for biomass harvest forecasting due to its superior predictive capabilities.",
-            "Designed an algorithm for optimal path selection with a focus on cost reduction and minimizing under-utilization.",
-            "Demonstrated dedication and persistence by investing over 35 days and producing more than 50 iterations, leading to qualification for the second round, where only 20 individuals advanced from the initial round."
-        ],
         "features": {
             "Participant": {
                 "Ranking": 19,
@@ -100,12 +82,6 @@
         "technology_used": "Python, Plotly Open Source Graphing Library, OpenCV, PyAudio",
         "concepts": "Semantic Object Segregation, Real-time Video and Audio Analysis, Sentiment Analysis, Machine Learning",
         "code_link": "https://github.com/sidd6p/Audio-Video-Analysis-Tool",
-        "description": [
-            "The AVAT system enhances video conferencing meetings by segregating semantic objects and analyzing both visual and audio signals in real-time using sentiment analysis through machine learning techniques.",
-            "The insights gained from this analysis can improve customer interactions, provide training for effective customer engagement, and understand the overall mood of the meeting for informed decision-making.",
-            "For video analysis utilized the FER library for facial expression recognition",
-            "For audio analysis used text2emotion for audio sentiment analysis, employed Flair, a Bi-LSTM model"
-        ],
         "features": {
             "Video Analysis": {
                 "Utilized the FER library for facial expression recognition": true,
@@ -122,12 +98,6 @@
         "code_link": "https://github.com/sidd6p/AWS-Image-Classification",
         "technology_used": "Python (Programming Language), Deep Learning, AWS SageMaker, PyTorch",
         "concepts": "Image Classification, Neural Network, Hyperparameters Tuning",
-        "description": [
-            "Developed an image classification template for the Amazon AI Programming with Python Nanodegree on Udacity.",
-            "Implemented two modes of usage: Command Line Utility and Jupyter Notebook.",
-            "Command Line Utility allows users to modify hyperparameters, data directory, and more via command line arguments.",
-            "Jupyter Notebook provides a user-friendly view of the model and aids in understanding the functions and operations."
-        ],
         "features": {
             "Command Line Utility": {
                 "Options": {
@@ -142,5 +112,5 @@
             },
             "Jupyter Notebook": true
         }
-    }    
+    }
 ]

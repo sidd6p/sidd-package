@@ -1,0 +1,74 @@
+[
+    {
+        "Company": "Cisco",
+        "Title": "Security Consultant Engineer (Software Developer)",
+        "Skills": "Langchain, Langgraph, Agent-based architecture, Python, EC2, GenAI, React, VPN Troubleshooting",
+        "Type": "Full-time",
+        "start_date": "August 2023",
+        "end_date": "Present",
+        "description": [
+            "Started working on a Langchain and Langgraph project. Using agent to get real time information from the web for the LLM.",
+            "Received 3 recognitions for contributions to automation and AI projects.",
+            "Designed a feedback tool using GenAI, reducing the load time by more than 90%.",
+            "Developed a software and API from scratch for the security summit to showcase Cisco product features using Python and EC2.",
+            "Working on a visualization tool for case management using React and Python.",
+            "Troubleshooting live network issues (VPN) of customers. Resolved around 300 cases in one year, including issues in hospitals, government, and defense establishments."
+        ]
+    },
+    {
+        "Company": "Cisco",
+        "Title": "Technical Undergraduate Intern",
+        "Skills": "Python, APIs, Cisco software, Wireshark, Linux",
+        "Type": "Internship",
+        "start_date": "January 2023",
+        "end_date": "August 2023",
+        "description": [
+            "Developed a plugin to monitor FMC database health using <1% of measurable data with the security BU.",
+            "Achieved impressive performance in the Bridge-a-thon hackathon, reaching the final round and receiving the Young Turk Award from the director, CX.",
+            "Undertook the DevNet certification exam to assess skills in Python, APIs, and Cisco software and tools.",
+            "Completed team-specific training in technologies like Wireshark and Linux."
+        ]
+    },
+    {
+        "Company": "Trademarkia",
+        "Title": "Project Intern",
+        "Skills": "Market Research, Competitor Analysis, Project Management",
+        "Type": "Internship",
+        "start_date": "May 2022",
+        "end_date": "July 2022",
+        "description": [
+            "Worked as a project intern, contributing to the development of a product that had been halted for over 6 months.",
+            "Conducted comprehensive market research and competitor analysis to assess market fit and challenges.",
+            "Collaborated with the team to deliver the core functionalities within the specified timeline.",
+            "Assumed the role of project manager, ensuring timely delivery and meeting project expectations.",
+            "Led a team of 22 interns, optimizing their tasks, removing dependencies, and coordinating with reporting managers and the director of engineering for decision-making and project adjustments."
+        ]
+    },
+    {
+        "Company": "Powstik",
+        "Title": "Full Stack Developer",
+        "Skills": "Flask, Bootstrap, Azure, GitHub, WordPress, Web Development",
+        "Type": "Full-time",
+        "start_date": "April 2022",
+        "end_date": "July 2022",
+        "description": [
+            "Built the flask-based back-end seller-portal using Flask and Bootstrap.",
+            "Deployed the application using Azure functions and GitHub.",
+            "Joined as a Full Stack Engineer and later transitioned into the role of Technical Manager.",
+            "As a Technical Manager, built a team of 9 people responsible for migrating a WordPress hosted website to a hard-coded Azure-hosted website.",
+            "Decided the tech stack, designed the organizational structure, and built web-portals as part of my responsibilities."
+        ]
+    },
+    {
+        "Company": "FutureReadyTalent",
+        "Title": "Software Developer",
+        "Skills": "Azure, SQL, Blob Storage, E-commerce Platform Development",
+        "Type": "Project",
+        "start_date": "November 2021",
+        "end_date": "February 2022",
+        "description": [
+            "Built an e-commerce platform with two portals (seller, buyer).",
+            "Deployed on 2 Azure VMs for each portal, utilizing Azure SQL and Azure Blob for efficient data handling."
+        ]
+    }
+]

@@ -29,10 +29,6 @@ def display_project_details(project_data):
 
     st.markdown(f"### 🌐 [Code Link]({project_data['code_link']})")
 
-    st.markdown("#### Description:")
-    for line in project_data["description"]:
-        st.markdown(f" - {line}")
-
     st.markdown("#### Features:")
     st.json(project_data["features"])
 
