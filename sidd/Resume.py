@@ -13,18 +13,18 @@ def fetch_and_open_png_from_url(url):
             # Return the image data in bytes
             return BytesIO(response.content)
         else:
-            # st.error(f"Failed to retrieve the image. Status code: {response.status_code}")
+            st.error(f"Failed to retrieve the image. Status code: {response.status_code}")
             return None
     except requests.exceptions.RequestException as e:
         # Catch any exceptions during the request
         st.error(f"An error occurred while fetching the image: {e}")
         return None
 
-# Example usage for image (PNG)
+# Correct raw URL for the PNG image (replace with actual raw URL)
 url = "https://raw.githubusercontent.com/sidd6p/sidd-package/main/src/siddhartha_resume.png"
 image_data = fetch_and_open_png_from_url(url)
 
-# URL for the PDF (raw URL for direct access to the PDF)
+# Correct raw URL for the PDF (replace with actual raw URL)
 resume_pdf_url = "https://raw.githubusercontent.com/sidd6p/sidd-package/main/src/siddhartha_resume.pdf"
 
 try:
