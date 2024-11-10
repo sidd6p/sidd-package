@@ -1,177 +1,49 @@
 import streamlit as st
 import json
 
-# Project data in JSON format
-projects_json = """[
-    {
-        "project_name": "Store-API",
-        "technology_used": "Python, Flask, VS Code, RestAPI, Insomnia, Swagger",
-        "concepts": "RESTful API, Authentication, Email Functionality, Deployment",
-        "code_link": "https://github.com/sidd6p/Store-API",
-        "description": [
-            "Developed a RESTful API for store management using Flask framework.",
-            "Utilized libraries such as smorest and JWT for authentication.",
-            "Implemented email functionality using Mailgun API.",
-            "Used Render for deployment."
-        ],
-        "features": {
-            "User": {
-                "Allows users to register by providing necessary details.": true,
-                "Enables users to log in using their email and password.": true,
-                "Allows users to securely log out of their accounts.": true
-            },
-            "Store": {
-                "Enables the creation of a new store to list items and tags.": true,
-                "Allows the deletion of a store along with its listed items and tags.": true
-            },
-            "Item": {
-                "Allows the creation of a new item for a specific store.": true,
-                "Enables the modification of item information such as name, description, etc.": true,
-                "Allows the removal of an item along with its associated tag from the store.": true
-            },
-            "Tag": {
-                "Enables the creation of a new tag to group items together.": true,
-                "Allows the deletion of a tag from the system.": true
-            },
-            "Link": {
-                "Enables the removal of a tag association from a specific item": true
-            }
-        }
-    },
-    {
-        "project_name": "Deep Learning Utility",
-        "technology_used": "Python, Kaggle",
-        "concepts": "Neural Network Training, Model Evaluation, Loss Computation, Data Visualization",
-        "kaggle_link": "https://www.kaggle.com/code/siddp6/deep-learning-utility",
-        "description": [
-            "Developed a Python utility file containing functions to streamline training and evaluating neural network models." ,
-            "The utility includes functions such as run_epoch for single training or validation epochs, test_run for model evaluation, and train for training neural network models over specified epochs.",
-            "It also features plot_loss function to generate training and validation loss plots, aiding efficient model evaluation and visualization."
-        ],
-        "code_link": "https://www.kaggle.com/code/siddp6/deep-learning-utility",
-        "features": {
-            "run_epoch": {
-                "Runs a single training or validation epoch": true,
-                "Manages model mode (train or eval)": true,
-                "Computes losses and updates weights during training.": true,
-                "Returns the average loss for the epoch.": true
-            },
-            "test_run": {
-                "Evaluates a trained model on an evaluation dataset.": true,
-                "Computes losses and tracks correct predictions per class.": true,
-                "Returns evaluation results":{
-                    "average loss": true, 
-                    "true labels": true, 
-                    "class-wise correct counts": true, 
-                    "total counts": true
-                }
-            },
-            "train": {
-                "Trains a neural network model for specified epochs.": true,
-                "Iterates through epochs, trains on training data, and calculates training losses.": true,
-                "Computes validation losses if provided.": true,
-                "Returns lists of training and validation losses.": true
-            },
-            "plot_loss": {
-                "Generates a plot showing training": true,
-                "Generates a plot showing validation losses": true
-            }
-        }
-    },
-    {
-        "project_name": "Shell AI Waste to Energy Hackathon 2023",
-        "technology_used": "Python, ARIMA, Algorithms, Kaggle",
-        "code_link": "https://www.kaggle.com/code/siddp6/shell-ai-waste-to-energy/notebook",
-        "concepts": "Biomass Harvest Forecasting, Optimal Path Selection, ARIMA Modeling, Algorithm Design",
-        "description": [
-            "Participated in the Shell.ai Hackathon 2023, General Edition, achieving a remarkable ranking of 19 out of 1600+ participants.",
-            "Engaged in solving a unique challenge centered around forecasting biomass harvest and optimizing routes from harvesting sites to depots and refineries, contributing to the promotion of biomass fuel and the reduction of carbon footprint.",
-            "Employed an ARIMA model for biomass harvest forecasting due to its superior predictive capabilities.",
-            "Designed an algorithm for optimal path selection with a focus on cost reduction and minimizing under-utilization.",
-            "Demonstrated dedication and persistence by investing over 35 days and producing more than 50 iterations, leading to qualification for the second round, where only 20 individuals advanced from the initial round."
-        ],
-        "features": {
-            "Participant": {
-                "Ranking": 19,
-                "Challenge": "Forecasting biomass harvest and optimizing routes",
-                "Techniques": "ARIMA model, Algorithm design",
-                "Duration": "Over 35 days, 50+ iterations"
-            }
-        }
-    },
-    {
-        "project_name": "AVAT (Audio Video Analysis Tool)",
-        "technology_used": "Python, Plotly Open Source Graphing Library, OpenCV, PyAudio",
-        "concepts": "Semantic Object Segregation, Real-time Video and Audio Analysis, Sentiment Analysis, Machine Learning",
-        "code_link": "https://github.com/sidd6p/Audio-Video-Analysis-Tool",
-        "description": [
-            "The AVAT system enhances video conferencing meetings by segregating semantic objects and analyzing both visual and audio signals in real-time using sentiment analysis through machine learning techniques.",
-            "The insights gained from this analysis can improve customer interactions, provide training for effective customer engagement, and understand the overall mood of the meeting for informed decision-making.",
-            "For video analysis utilized the FER library for facial expression recognition",
-            "For audio analysis used text2emotion for audio sentiment analysis, employed Flair, a Bi-LSTM model"
-        ],
-        "features": {
-            "Video Analysis": {
-                "Utilized the FER library for facial expression recognition": true,
-                "Implemented a CNN-based PyTorch model": true
-            },
-            "Audio Analysis": {
-                "Employed Flair, a Bi-LSTM model": true,
-                "Used text2emotion for audio sentiment analysis": true
-            }
-        }
-    },
-    {
-        "project_name": "Image-Classification-Template",
-        "code_link": "https://github.com/sidd6p/AWS-Image-Classification",
-        "technology_used": "Python (Programming Language), Deep Learning, AWS SageMaker, PyTorch",
-        "concepts": "Image Classification, Neural Network, Hyperparameters Tuning",
-        "description": [
-            "Developed an image classification template for the Amazon AI Programming with Python Nanodegree on Udacity.",
-            "Implemented two modes of usage: Command Line Utility and Jupyter Notebook.",
-            "Command Line Utility allows users to modify hyperparameters, data directory, and more via command line arguments.",
-            "Jupyter Notebook provides a user-friendly view of the model and aids in understanding the functions and operations."
-        ],
-        "features": {
-            "Command Line Utility": {
-                "Options": {
-                    "Path to the directory containing the training data.": true,
-                    "NN architecture to be used for image classification.": true,
-                    "Learning rate for the neural network training.": true,
-                    "Number of hidden units in the neural network.": true,
-                    "Number of training epochs for the neural network.": true,
-                    "Flag to enable or disable GPU usage for training.": true,
-                    "Path to the directory for saving training checkpoints.": true
-                }
-            },
-            "Jupyter Notebook": true
-        }
-    }    
-]
-""" 
 
-projects_list = json.loads(projects_json)
 
 # Function to display project details creatively
-def display_project_details(project):
-    st.markdown(f"# 🚀 **{project['project_name']}**")
-    st.markdown(f"__💻 Technology Used:__ {project['technology_used']}")
-    st.markdown(f"__💡 Concepts:__ {project['concepts']}")
-    if "code_link" in project:
-        st.markdown(f"### 🌐 [Code Link]({project['code_link']})")
-    st.markdown("#### Description:")
-    for line in project["description"]:
-        st.markdown(f" - {line}")
-    st.markdown("#### Features:")
-    st.json(project["features"])
+def display_project_details(project_data):
+    st.markdown(f"# 🚀 **{project_data['project_name']}**")
 
-# Dropdown to select a project
-project_names = [project["project_name"] for project in projects_list]
-if project_names:
-    selected_project = st.selectbox("Select a Project", project_names)
-    for project in projects_list:
-        if project["project_name"] == selected_project:
-            display_project_details(project)
-            break
-else:
-    st.write("No projects available.")
+    st.markdown(f"__💻 Technology Used:__ {project_data['technology_used']}")
+
+    st.markdown(f"__💡Concepts:__ {project_data['concepts']}")
+
+    st.markdown(f"### 🌐 [Code Link]({project_data['code_link']})")
+
+    st.markdown("#### Description:")
+    for line in project_data["description"]:
+        st.markdown(f" - {line}")
+
+    st.markdown("#### Features:")
+    st.json(project_data["features"])
+
+
+# Hardcoded JSON file path
+json_file_path = "./sidd/src/projects.json"
+
+# Load JSON data
+try:
+    with open(json_file_path, "r") as file:
+        projects_data = json.load(file)
+
+        # Get project names for the dropdown options
+        project_names = [project["project_name"] for project in projects_data]
+
+        # Dropdown to select a project
+        selected_project = st.selectbox("Select a Project", project_names)
+
+        # Find the selected project and display its details
+        for project in projects_data:
+            if project["project_name"] == selected_project:
+                display_project_details(project)
+                break
+except FileNotFoundError:
+    st.error(f"File not found at path: {json_file_path}")
+except Exception as e:
+    st.error(f"An error occurred: {e}")
+
+
+    # Add more projects as needed

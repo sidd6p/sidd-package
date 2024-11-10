@@ -4,8 +4,8 @@ import streamlit as st
 from PIL import Image
 
 
-resume_pdf_path = "./siddhartha_resume.pdf"
-resume_png_path = "./siddhartha_resume.png"
+resume_pdf_path = ("./sidd/src/siddhartha_resume.pdf")
+resume_png_path = ("./sidd/src/siddhartha_resume.png")
 
 with open(resume_pdf_path, "rb") as file:
     btn = st.download_button(
