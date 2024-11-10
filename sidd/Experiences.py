@@ -35,7 +35,7 @@ def display_experience_details(experience_data):
 
 # Load JSON data from URL
 try:
-    url = "https://raw.githubusercontent.com/sidd6p/sidd-package/refs/heads/main/src/experience.json"
+    url = "https://raw.githubusercontent.com/sidd6p/sidd-package/refs/heads/main/src/experiences.json"
     experiences_data = fetch_json_from_url(url)
 
     if experiences_data:  # Check if the data was successfully fetched
