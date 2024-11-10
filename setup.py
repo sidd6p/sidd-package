@@ -11,7 +11,7 @@ with open("README.md", "r") as fh:
 # Setup function for the package
 setuptools.setup(
     name="SiddP6",                     # This is the name of the package
-    version="0.1.0",                        # The initial release version
+    version="0.2.0",                        # The initial release version
     author="Siddhartha Purwar",                     # Full name of the author
     description="Siddhartha Purwar portfolio pip package",
     long_description=long_description,      # Long description read from the readme file
