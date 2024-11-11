@@ -42,7 +42,7 @@ try:
         experience_titles = [experience["Title"] for experience in experiences_data]
 
         # Dropdown to select a job title
-        selected_experience = st.selectbox("Select an Experience 🧐", experience_titles)
+        selected_experience = st.selectbox("Experiences 🧐", experience_titles)
 
         # Find the selected experience and display its details
         for experience in experiences_data:
