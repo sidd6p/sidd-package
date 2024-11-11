@@ -96,7 +96,7 @@
         "project_name": "Image-Classification-Template",
         "code_link": "https://github.com/sidd6p/AWS-Image-Classification",
         "Skills": "Python (Programming Language), Deep Learning, AWS SageMaker, PyTorch",
-        "concepts": "Image Classification, Neural Network, Hyperparameters Tuning",
+        "concepts": "Image Classification, Neural Network, Hyperparameters Tuning, Command Line Interface, Jupyter Notebook",
         "star": false,
         "features": {
             "Command Line Utility": [
@@ -106,11 +106,17 @@
                 "Number of hidden units in the neural network.",
                 "Number of training epochs for the neural network.",
                 "Flag to enable or disable GPU usage for training.",
-                "Path to the directory for saving training checkpoints."
+                "Path to the directory for saving training checkpoints.",
+                "Supports multiple neural network architectures: vgg16, vgg13, alexnet, and densenet.",
+                "Provides an option to save checkpoints during training for model recovery."
             ],
-            "Jupyter Notebook": []
+            "Jupyter Notebook": [
+                "Run the entire project workflow in a Jupyter notebook for interactive usage.",
+                "Supports dataset organization and model training with easy-to-follow commands.",
+                "Provides an interactive environment for visualizing training progress, loss, and accuracy."
+            ]
         }
-    },
+    },    
     {
         "project_name": "Deploy and Monitor a Machine Learning Workflow for Image Classification",
         "Skills": "AWS, Python, S3, SageMaker, Lambda, Step Function, boto3",
@@ -146,46 +152,75 @@
     {
         "project_name": "Log Ingestor and Query Interface",
         "Skills": "Python, FastAPI, RabbitMQ, PostgreSQL, Elasticsearch",
-        "concepts": "Log Ingestion, Querying, Full-Text Search, Filtering",
+        "concepts": "Log Ingestion, Querying, Full-Text Search, Filtering, Asynchronous Processing, Scalable Architecture",
         "code_link": "https://github.com/sidd6p/Log-Ingestor-and-Query-Interface",
         "star": true,
         "features": {
             "Log Ingestor": [
-                "Ingests log data and stores it in PostgreSQL and indexes in Elasticsearch."
+                "Ingests log data and stores it in PostgreSQL and indexes it in Elasticsearch for efficient querying.",
+                "Uses RabbitMQ for message queuing to ensure reliable, asynchronous processing of logs.",
+                "Supports high throughput ingestion, making it suitable for large-scale systems.",
+                "Efficient HTTP-based log ingestion with support for batch processing."
             ],
             "Query Interface": [
-                "Provides filtering and full-text search capabilities."
+                "Provides a powerful querying interface for searching and filtering ingested logs.",
+                "Supports full-text search capabilities powered by Elasticsearch for fast and accurate search results.",
+                "Allows users to filter logs based on time range, log level, and other metadata.",
+                "Provides an intuitive interface for navigating large volumes of log data."
             ]
         }
-    },
+    }
+    ,
     {
         "project_name": "E-Commerce Platform",
-        "duration": "Dec 2021 - Feb 2022",
-        "star": false,
+        "Skills": "Microsoft Azure, Flask, Python, Git, SQLite, HTML, SQL, Azure Blob Storage, Azure SQL Server, Microservices",
+        "concepts": "E-Commerce Development, Cloud Deployment, Real-time Order Status, Microservices Architecture, High Availability",
         "code_link": "https://github.com/sidd6p/Fully-Function-E-commerce",
-        "description": "Future Ready Talent is a virtual internship platform with an opportunity to create innovative solutions using Microsoft Azure & GitHub tools.",
-        "features": [
-            "Built fully functional e-commerce with real-time order status, including two separate portals (seller and buyer)",
-            "Deployed in two Azure VMs using one Azure SQL and one Azure Blob storage"
-        ],
-        "Skills": "Microsoft Azure, Flask, GitHub, Python, Git, SQLite, HTML, SQL",
-        "concepts": "E-Commerce Development, Cloud Deployment, Real-time Order Status"
-    },
+        "star": false,
+        "features": {
+            "Buyer": [
+                "Allows users to register, login, and view product listings.",
+                "Enables buyers to add products to cart or wishlist.",
+                "Allows bulk ordering of items from the cart or wishlist.",
+                "Provides the option to cancel or confirm orders.",
+                "Displays order history and updates status of orders (Accepted, Out for Delivery, Cancelled).",
+                "Shows product details and allows users to search for products."
+            ],
+            "Seller": [
+                "Enables sellers to register, login, and upload products.",
+                "Allows sellers to update product details and availability.",
+                "Enables sellers to manage orders and update order status.",
+                "Allows the addition of a seller shop image/logo and product images.",
+                "Shows a list of buyers and their orders for each seller."
+            ],
+            "General": [
+                "Supports real-time order tracking for both buyers and sellers.",
+                "Uses Azure services such as Azure SQL Server for database management and Azure Blob Storage for image storage.",
+                "Provides high availability using separate virtual machines (VMs) for buyers and sellers, ensuring operational continuity even if one server goes down."
+            ]
+        }
+    },    
     {
         "project_name": "Project X",
-        "duration": "Jan 2022",
-        "star": false,
+        "Skills": "Python, FastAPI, SQLite, MySQL, Git, Flask, HTML, GitHub, SQL",
+        "concepts": "Cloud Storage, FastAPI, User Authentication, File Management",
         "code_link": "https://github.com/sidd6p/Project-X",
-        "description": "Cloud-based file storing API written in Python FastAPI.",
-        "features": [
-            "User login and registration",
-            "File storage service",
-            "Web-based client application for file upload and download",
-            "Access control (currently, only the owner can view files)"
-        ],
-        "Skills": "Flask, GitHub, Python, Git, SQLite, HTML, MySQL, SQL",
-        "concepts": "Cloud Storage, FastAPI, User Authentication, File Management"
-    },
+        "star": false,
+        "features": {
+            "User": [
+                "Allows users to register and log in securely.",
+                "Provides access control for file storage (currently, only the owner can view the files)."
+            ],
+            "File Storage": [
+                "Enables file upload and download functionalities.",
+                "Stores files on a server with a web-based client application."
+            ],
+            "General": [
+                "Web-based client application to interact with the file storage service.",
+                "Documentation available at /docs for easy interaction and API testing."
+            ]
+        }
+    },    
     {
         "project_name": "Cab Sharing Web App",
         "duration": "Oct 2021 - Nov 2021",
