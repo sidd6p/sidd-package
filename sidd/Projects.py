@@ -17,7 +17,7 @@ def fetch_json_from_url(url):
 # Function to display project details creatively
 def display_project_details(project_data):
     st.markdown(f"# 🚀 **{project_data['project_name']}**")
-    st.markdown(f"__💻 Technology Used:__ {project_data['technology_used']}")
+    st.markdown(f"__💻 Skills:__ {project_data['Skills']}")
     st.markdown(f"__💡Concepts:__ {project_data['concepts']}")
     st.markdown(f"### 🌐 [Code Link]({project_data['code_link']})")
     st.markdown("#### Details:")

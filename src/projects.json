@@ -1,7 +1,7 @@
 [
     {
         "project_name": "Store-API",
-        "technology_used": "Python, Flask, VS Code, RestAPI, Insomnia, Swagger",
+        "Skills": "Python, Flask, VS Code, RestAPI, Insomnia, Swagger",
         "concepts": "RESTful API, Authentication, Email Functionality, Deployment",
         "code_link": "https://github.com/sidd6p/Store-API",
         "star": true,
@@ -31,7 +31,7 @@
     },
     {
         "project_name": "Deep Learning Utility",
-        "technology_used": "Python, Kaggle",
+        "Skills": "Python, Kaggle",
         "concepts": "Neural Network Training, Model Evaluation, Loss Computation, Data Visualization",
         "kaggle_link": "https://www.kaggle.com/code/siddp6/deep-learning-utility",
         "code_link": "https://www.kaggle.com/code/siddp6/deep-learning-utility",
@@ -62,7 +62,7 @@
     },
     {
         "project_name": "Shell AI Waste to Energy Hackathon 2023",
-        "technology_used": "Python, ARIMA, Algorithms, Kaggle",
+        "Skills": "Python, ARIMA, Algorithms, Kaggle",
         "code_link": "https://www.kaggle.com/code/siddp6/shell-ai-waste-to-energy/notebook",
         "concepts": "Biomass Harvest Forecasting, Optimal Path Selection, ARIMA Modeling, Algorithm Design",
         "star": true,
@@ -77,7 +77,7 @@
     },
     {
         "project_name": "AVAT (Audio Video Analysis Tool)",
-        "technology_used": "Python, Plotly Open Source Graphing Library, OpenCV, PyAudio",
+        "Skills": "Python, Plotly Open Source Graphing Library, OpenCV, PyAudio",
         "concepts": "Semantic Object Segregation, Real-time Video and Audio Analysis, Sentiment Analysis, Machine Learning",
         "code_link": "https://github.com/sidd6p/Audio-Video-Analysis-Tool",
         "star": true,
@@ -95,7 +95,7 @@
     {
         "project_name": "Image-Classification-Template",
         "code_link": "https://github.com/sidd6p/AWS-Image-Classification",
-        "technology_used": "Python (Programming Language), Deep Learning, AWS SageMaker, PyTorch",
+        "Skills": "Python (Programming Language), Deep Learning, AWS SageMaker, PyTorch",
         "concepts": "Image Classification, Neural Network, Hyperparameters Tuning",
         "star": false,
         "features": {
@@ -113,7 +113,7 @@
     },
     {
         "project_name": "Deploy and Monitor a Machine Learning Workflow for Image Classification",
-        "technology_used": "AWS, Python, S3, SageMaker, Lambda, Step Function, boto3",
+        "Skills": "AWS, Python, S3, SageMaker, Lambda, Step Function, boto3",
         "concepts": "Data Staging, Model Training, Deployment, Prediction, Testing and Evaluation",
         "code_link": "https://github.com/sidd6p/Build-a-ML-Workflow-On-Amazon-SageMaker",
         "star": true,
@@ -145,7 +145,7 @@
     },
     {
         "project_name": "Log Ingestor and Query Interface",
-        "technology_used": "Python, FastAPI, RabbitMQ, PostgreSQL, Elasticsearch",
+        "Skills": "Python, FastAPI, RabbitMQ, PostgreSQL, Elasticsearch",
         "concepts": "Log Ingestion, Querying, Full-Text Search, Filtering",
         "code_link": "https://github.com/sidd6p/Log-Ingestor-and-Query-Interface",
         "star": true,
@@ -168,16 +168,7 @@
             "Built fully functional e-commerce with real-time order status, including two separate portals (seller and buyer)",
             "Deployed in two Azure VMs using one Azure SQL and one Azure Blob storage"
         ],
-        "skills": [
-            "Microsoft Azure",
-            "Flask",
-            "GitHub",
-            "Python",
-            "Git",
-            "SQLite",
-            "HTML",
-            "SQL"
-        ]
+        "Skills":  "Microsoft Azure, Flask, GitHub, Python, Git, SQLite, HTML, SQL"
     },
     {
         "project_name": "Project X",
@@ -191,16 +182,8 @@
             "Web-based client application for file upload and download",
             "Access control (currently, only the owner can view files)"
         ],
-        "skills": [
-            "Flask",
-            "GitHub",
-            "Python",
-            "Git",
-            "SQLite",
-            "HTML",
-            "MySQL",
-            "SQL"
-        ]
+        "skills": "Flask, GitHub, Python, Git, SQLite, HTML, MySQL, SQL"
+        
     },
     {
         "project_name": "Cab Sharing Web App",
@@ -214,15 +197,6 @@
             "Cab-sharing history, user verification, and rating available on the account page",
             "Ongoing development for additional features"
         ],
-        "skills": [
-            "Flask",
-            "Linux",
-            "GitHub",
-            "Python",
-            "Git",
-            "SQLite",
-            "HTML",
-            "MySQL"
-        ]
+        "skills":  "Flask, Linux, GitHub, Python, Git, SQLite, HTML, MySQL"
     }
 ]
