@@ -168,7 +168,7 @@
             "Built fully functional e-commerce with real-time order status, including two separate portals (seller and buyer)",
             "Deployed in two Azure VMs using one Azure SQL and one Azure Blob storage"
         ],
-        "skills": "Microsoft Azure, Flask, GitHub, Python, Git, SQLite, HTML, SQL",
+        "Skills": "Microsoft Azure, Flask, GitHub, Python, Git, SQLite, HTML, SQL",
         "concepts": "E-Commerce Development, Cloud Deployment, Real-time Order Status"
     },
     {
@@ -183,7 +183,7 @@
             "Web-based client application for file upload and download",
             "Access control (currently, only the owner can view files)"
         ],
-        "skills": "Flask, GitHub, Python, Git, SQLite, HTML, MySQL, SQL",
+        "Skills": "Flask, GitHub, Python, Git, SQLite, HTML, MySQL, SQL",
         "concepts": "Cloud Storage, FastAPI, User Authentication, File Management"
     },
     {
@@ -198,7 +198,7 @@
             "Cab-sharing history, user verification, and rating available on the account page",
             "Ongoing development for additional features"
         ],
-        "skills": "Flask, Linux, GitHub, Python, Git, SQLite, HTML, MySQL",
+        "Skills": "Flask, Linux, GitHub, Python, Git, SQLite, HTML, MySQL",
         "concepts": "Ride-sharing, User Privacy, Web Application, Self-service Platform"
     }
 ]
