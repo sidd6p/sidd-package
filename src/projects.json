@@ -97,7 +97,7 @@
         "code_link": "https://github.com/sidd6p/AWS-Image-Classification",
         "technology_used": "Python (Programming Language), Deep Learning, AWS SageMaker, PyTorch",
         "concepts": "Image Classification, Neural Network, Hyperparameters Tuning",
-        "star": true,
+        "star": false,
         "features": {
             "Command Line Utility": [
                 "Path to the directory containing the training data.",
@@ -110,5 +110,119 @@
             ],
             "Jupyter Notebook": []
         }
+    },
+    {
+        "project_name": "Deploy and Monitor a Machine Learning Workflow for Image Classification",
+        "technology_used": "AWS, Python, S3, SageMaker, Lambda, Step Function, boto3",
+        "concepts": "Data Staging, Model Training, Deployment, Prediction, Testing and Evaluation",
+        "code_link": "https://github.com/sidd6p/Build-a-ML-Workflow-On-Amazon-SageMaker",
+        "star": true,
+        "features": {
+            "Data Staging": [
+                "Extracts data from a hosting service and transforms it into usable format.",
+                "Saves data locally and loads it into production systems."
+            ],
+            "Explore the Data": [
+                "Filters objects to find label numbers for Bicycle and Motorcycles.",
+                "Converts objects into a DataFrame."
+            ],
+            "Model Training": [
+                "Creates metadata for image classification on SageMaker.",
+                "Uploads metadata to S3, adds hyperparameters, and trains the model."
+            ],
+            "Deployment": [
+                "Creates data capture, deploys model endpoint, and instantiates a predictor."
+            ],
+            "Lambda Functions": [
+                "Lambda 1: Serializes target data from S3.",
+                "Lambda 2: Classifies image.",
+                "Lambda 3: Checks confidence threshold."
+            ],
+            "Testing and Evaluation": [
+                "Generates test cases, pulls JSONLines data from inferences, and plots results."
+            ]
+        }
+    },
+    {
+        "project_name": "Log Ingestor and Query Interface",
+        "technology_used": "Python, FastAPI, RabbitMQ, PostgreSQL, Elasticsearch",
+        "concepts": "Log Ingestion, Querying, Full-Text Search, Filtering",
+        "code_link": "https://github.com/sidd6p/Log-Ingestor-and-Query-Interface",
+        "star": true,
+        "features": {
+            "Log Ingestor": [
+                "Ingests log data and stores it in PostgreSQL and indexes in Elasticsearch."
+            ],
+            "Query Interface": [
+                "Provides filtering and full-text search capabilities."
+            ]
+        }
+    },
+    {
+        "project_name": "E-Commerce Platform",
+        "duration": "Dec 2021 - Feb 2022",
+        "star": false,
+        "code_link": "https://github.com/sidd6p/Fully-Function-E-commerce",
+        "description": "Future Ready Talent is a virtual internship platform with an opportunity to create innovative solutions using Microsoft Azure & GitHub tools.",
+        "features": [
+            "Built fully functional e-commerce with real-time order status, including two separate portals (seller and buyer)",
+            "Deployed in two Azure VMs using one Azure SQL and one Azure Blob storage"
+        ],
+        "skills": [
+            "Microsoft Azure",
+            "Flask",
+            "GitHub",
+            "Python",
+            "Git",
+            "SQLite",
+            "HTML",
+            "SQL"
+        ]
+    },
+    {
+        "project_name": "Project X",
+        "duration": "Jan 2022",
+        "star": false,
+        "code_link": "https://github.com/sidd6p/Project-X",
+        "description": "Cloud-based file storing API written in Python FastAPI.",
+        "features": [
+            "User login and registration",
+            "File storage service",
+            "Web-based client application for file upload and download",
+            "Access control (currently, only the owner can view files)"
+        ],
+        "skills": [
+            "Flask",
+            "GitHub",
+            "Python",
+            "Git",
+            "SQLite",
+            "HTML",
+            "MySQL",
+            "SQL"
+        ]
+    },
+    {
+        "project_name": "Cab Sharing Web App",
+        "duration": "Oct 2021 - Nov 2021",
+        "code_link": "https://github.com/sidd6p/CO-Ride",
+        "star": false,
+        "description": "A traditional cab-sharing web app, developed as part of Vellore Institute of Technology projects.",
+        "features": [
+            "User privacy features to hide information until both parties agree to share the ride",
+            "No third-party involvement like Ola or Uber, enabling passengers to share the fare equally",
+            "Cab-sharing history, user verification, and rating available on the account page",
+            "Ongoing development for additional features"
+        ],
+        "skills": [
+            "Flask",
+            "Linux",
+            "GitHub",
+            "Python",
+            "Git",
+            "SQLite",
+            "HTML",
+            "MySQL"
+        ]
     }
 ]

@@ -20,7 +20,7 @@ def display_project_details(project_data):
     st.markdown(f"__💻 Technology Used:__ {project_data['technology_used']}")
     st.markdown(f"__💡Concepts:__ {project_data['concepts']}")
     st.markdown(f"### 🌐 [Code Link]({project_data['code_link']})")
-    st.markdown("#### Features:")
+    st.markdown("#### Details:")
     st.json(project_data["features"])
 
 # Load JSON data
