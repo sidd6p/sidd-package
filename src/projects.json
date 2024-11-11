@@ -168,7 +168,8 @@
             "Built fully functional e-commerce with real-time order status, including two separate portals (seller and buyer)",
             "Deployed in two Azure VMs using one Azure SQL and one Azure Blob storage"
         ],
-        "Skills":  "Microsoft Azure, Flask, GitHub, Python, Git, SQLite, HTML, SQL"
+        "skills": "Microsoft Azure, Flask, GitHub, Python, Git, SQLite, HTML, SQL",
+        "concepts": "E-Commerce Development, Cloud Deployment, Real-time Order Status"
     },
     {
         "project_name": "Project X",
@@ -182,14 +183,14 @@
             "Web-based client application for file upload and download",
             "Access control (currently, only the owner can view files)"
         ],
-        "skills": "Flask, GitHub, Python, Git, SQLite, HTML, MySQL, SQL"
-        
+        "skills": "Flask, GitHub, Python, Git, SQLite, HTML, MySQL, SQL",
+        "concepts": "Cloud Storage, FastAPI, User Authentication, File Management"
     },
     {
         "project_name": "Cab Sharing Web App",
         "duration": "Oct 2021 - Nov 2021",
-        "code_link": "https://github.com/sidd6p/CO-Ride",
         "star": false,
+        "code_link": "https://github.com/sidd6p/CO-Ride",
         "description": "A traditional cab-sharing web app, developed as part of Vellore Institute of Technology projects.",
         "features": [
             "User privacy features to hide information until both parties agree to share the ride",
@@ -197,6 +198,7 @@
             "Cab-sharing history, user verification, and rating available on the account page",
             "Ongoing development for additional features"
         ],
-        "skills":  "Flask, Linux, GitHub, Python, Git, SQLite, HTML, MySQL"
+        "skills": "Flask, Linux, GitHub, Python, Git, SQLite, HTML, MySQL",
+        "concepts": "Ride-sharing, User Privacy, Web Application, Self-service Platform"
     }
 ]
